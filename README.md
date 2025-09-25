@@ -25,45 +25,6 @@ It also includes a **Summary** view for progress tracking, QC flags, CSV export,
   - CSV export
   - Thumbnail gallery with **Open** → jump to Annotate
 
----
-
-## 📂 Project Structure
-
-ThoraxAnnotator/
-├── app.py              # Main Streamlit app
-├── requirements.txt    # Python dependencies
-├── Dataset/            # Place radiograph images here (PNG/JPG/JPEG)
-├── annotations/        # JSON annotations are saved here
-├── README.md           # This file
-├── .gitignore
-└── LICENSE             # Proprietary / All rights reserved
-
----
-
-## ⚙️ Installation
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Alalehvd/ThoraxAnnotator.git
-   cd ThoraxAnnotator
-
-	2.	Create a virtual environment (recommended):
-
-python3 -m venv env
-source env/bin/activate   # macOS/Linux
-env\Scripts\activate      # Windows
-
-
-	3.	Install dependencies:
-
-pip install -r requirements.txt
-
-
-	4.	Run the app:
-
-streamlit run app.py
-
-
-
 ⸻
 
 🖼️ Usage
