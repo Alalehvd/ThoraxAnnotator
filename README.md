@@ -1,32 +1,28 @@
-Canine Thorax Annotator
+# Canine Thorax Annotator 🐾
 
-A fast, clinician-friendly Streamlit app for annotating canine lateral thoracic radiographs and computing derived metrics (VHS, VLAS, tracheal diameter ratio, SAX/LAX angle). Includes a Summary view for progress tracking, QC flags, CSV export, and thumbnail “jump to image”.
+A **Streamlit-based annotation tool** for veterinary radiographs.  
+This app lets you mark **thoracic landmarks** on canine lateral radiographs and automatically compute measurements such as **VHS (Vertebral Heart Score), VLAS, tracheal diameter ratio, and SAX/LAX angle**. It also includes a **Summary** view for progress tracking, QC flags, CSV export, and a thumbnail gallery with “Open” to jump to any image.
 
-⸻
+---
 
-Features
-	•	Point-and-click annotation of 11 landmarks (in order):
-	•	T3_center, T4_cranial, T4_caudal, T5_center
-	•	long_axis_start (carina), long_axis_end (apex)
-	•	short_axis_start, short_axis_end
-	•	LA_end (caudal LA bulge)
-	•	trachea_upper, trachea_lower
-	•	Auto-computed metrics:
-VHS, VLAS, tracheal diameter ratio (TD/T4), SAX–LAX angle.
-	•	Legend & colored labels drawn on the image (customizable).
-	•	Robust image handling (EXIF transpose, RGB normalization).
-	•	Summary mode:
-	•	Overall progress bar
-	•	Filterable table with QC flags (e.g., VHS out of plausible range)
-	•	CSV export
-	•	Thumbnail gallery with Open → jump to Annotate
-	•	Resilient UI: single-click save, reliable Prev/Next, clear all, force redraw, and jump routing.
+## ✨ Features
+- Interactive annotation using `streamlit-drawable-canvas`.
+- 11 standardized landmarks:
+  - T3_center, T4_cranial, T4_caudal, T5_center  
+  - long_axis_start (carina), long_axis_end (apex)  
+  - short_axis_start, short_axis_end  
+  - LA_end (caudal LA bulge)  
+  - trachea_upper, trachea_lower
+- Auto-computed measurements:
+  - T4 length, VHS, VLAS, TD/T4, SAX–LAX angle
+- Colored points + labels with a customizable legend
+- Robust image handling (EXIF transpose, RGB normalization)
+- **Summary** mode:
+  - Progress bar
+  - Filterable table with QC flags
+  - CSV export
+  - Thumbnail gallery with **Open** → jump to Annotate
 
-⸻
+---
 
-Quick start
-
-1) Prerequisites
-	•	Python 3.13 (tested on 3.13.6)
-	•	macOS/Linux/Windows
-	•	A folder of radiographs in PNG/JPG/JPEG format.
+## 📂 Project Structure
