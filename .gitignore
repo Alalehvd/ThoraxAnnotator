@@ -1,0 +1,29 @@
+# macOS junk
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Streamlit cache
+.streamlit/
+
+# IDEs
+.vscode/
+.idea/
+
+# Project-specific
+annotations/*.json
+Dataset/*
+!Dataset/.gitkeep
+annotations/.gitkeep
